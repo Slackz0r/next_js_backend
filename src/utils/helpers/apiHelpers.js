@@ -53,11 +53,22 @@ export function validateBookData(data) {
 
 export function getIdFromUrl(url) {
   const { pathname } = new URL(url);
-  const startIndexOfId = pathname.lastIndexOf("/") + 1;
-  console.log(startIndexOfId);
+  const startIndexOfId = pathname.substring(pathname.lastIndexOf("/") + 1);
+
   if (!startIndexOfId) {
     return "";
   }
 
-  return pathname.substring(startIndexOfId);
+  return startIndexOfId;
+}
+
+export function object404Respsonse(response, model = "") {
+  return response.json(
+    {
+      message: `${model} not found`,
+    },
+    {
+      status: 404,
+    }
+  );
 }

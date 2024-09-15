@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -30,4 +30,317 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+input {
+  color: black;
+} */
+
+/* styles.css */
+
+.auth_form_container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.auth_form_container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
+
+.form_label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+.form_input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form_input:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.form_button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0070f3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form_button:hover {
+  background-color: #005bb5;
+}
+
+.error_message {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.toggle_link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #0070f3;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.toggle_link:hover {
+  color: #005bb5;
+}
+
+.item-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px 0;
+  width: 300px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+}
+
+.item-name {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.item-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.item-category {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.item-quantity {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+/* Container for the item card */
+.item-card {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Styling for the item name */
+.item-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem; /* Increased space */
+}
+
+/* Description, category, and quantity styles */
+.item-description,
+.item-category,
+.item-quantity {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem; /* Increased space */
+}
+
+/* Input fields for editing */
+.item-input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem; /* Increased space between input fields */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.item-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Save and Cancel buttons in the form */
+.save-btn,
+.cancel-btn {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Edit and Delete buttons outside the form */
+.edit-btn,
+.delete-btn {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Container for the form */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the form */
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Form group container */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Labels for input fields */
+.form-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Input fields */
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.auth-submit {
+  background-color: #28a745;
+  padding: 16px;
+  border-radius: 8px;
 }
